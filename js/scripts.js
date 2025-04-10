@@ -41,10 +41,20 @@ document.addEventListener("DOMContentLoaded", () => {
       cert: `Google Analytics Certification<br>AWS Certified Cloud Practitioner<br>Building RAG Agents with LLMs`
     };
   
+    // 預設載入英文內容
+    const content = en;
+    introText.textContent = content.intro;
+    edu.innerHTML = content.edu;
+    exp.innerHTML = content.exp;
+    proj.innerHTML = content.proj;
+    course.innerHTML = content.course;
+    comp.innerHTML = content.comp;
+    act.innerHTML = content.act;
+    cert.innerHTML = content.cert;
+  
     langBtn.addEventListener("click", () => {
       isEnglish = !isEnglish;
       langBtn.textContent = isEnglish ? "中文" : "EN";
-  
       const content = isEnglish ? en : zh;
       introText.textContent = content.intro;
       edu.innerHTML = content.edu;
@@ -56,4 +66,5 @@ document.addEventListener("DOMContentLoaded", () => {
       cert.innerHTML = content.cert;
     });
   });
+  
   
