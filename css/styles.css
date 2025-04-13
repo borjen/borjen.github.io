@@ -164,7 +164,6 @@ footer img {
 /* 工作標題 */
 .timeline-item h5 {
   margin-bottom: 8px;
-  font-weight: bold;
   padding-left: 0;
   line-height: 1.4;
 }
@@ -226,6 +225,19 @@ footer img {
 .certificate-item div {
   margin-top: 16px;
   font-weight: 500;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 992px) {
+  .certificate-item {
+    width: 48%; /* 平板時一行顯示兩張 */
+  }
+}
+
+@media (max-width: 576px) {
+  .certificate-item {
+    width: 48%; /* 手機時一行兩張 */
+  }
 }
 
 
@@ -314,7 +326,7 @@ footer img {
 /* 卡片下方的文字說明 */
 .portfolio-caption {
   margin-top: 8px;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 700;
   color: #2b64cf;
   line-height: 1.4;
@@ -344,7 +356,7 @@ footer img {
 
 @media (max-width: 576px) {
   .portfolio-cards {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 

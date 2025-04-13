@@ -47,9 +47,9 @@ document.addEventListener("DOMContentLoaded", () => {
       <div class="timeline-item">
         <h5><span class="text-muted">2024.08 - 現在</span>&nbsp;臺北大學智慧金融創新科技實驗室 <a href="https://www.aifitesg.org/" target="_blank" style="color: inherit; text-decoration: underline;">(IFIT Lab)<a> 研究員</h5>
         <ul>
-          <li>創新智慧代理 AI 技術於自主永續報告生成</li>
-          <li>數位支持、溝通無礙：AI科技協助語言障礙者溝通輔具之研發、支持與推廣<br>子計畫三：包容溝通支持多模態跨語言任務導向對話系統</li>
-          <li>智慧城市大型語言模型代理人系統</li>
+          <li>創新智慧代理 AI 技術於自主永續報告生成 (工研院)</li>
+          <li>數位支持、溝通無礙：AI科技協助語言障礙者溝通輔具之研發、支持與推廣<br>子計畫三：包容溝通支持多模態跨語言任務導向對話系統 (國科會)</li>
+          <li>智慧城市大型語言模型代理人系統 (資策會)</li>
         </ul>
       </div>
       <div class="timeline-item">
@@ -137,9 +137,9 @@ document.addEventListener("DOMContentLoaded", () => {
       <div class="timeline-item">
         <h5><span class="text-muted">2024.08 - Now</span>&nbsp;Researcher, Intelligent Financial Innovation Technology Lab <a href="https://www.aifitesg.org/" target="_blank" style="color: inherit; text-decoration: underline;">(IFIT Lab)<a>, NTPU</h5>
         <ul>
-          <li>Innovative Agentic AI Technology for Autonomous ESG Report Generation</li>
-          <li>Inclusive AI Dialogue Assistive Device Project, sub-project 3:<br>Multimodal Cross-lingual Task-Oriented Dialogue System for Inclusive Communication Support</li>
-          <li>Large Language Model Agent System for Smart City</li>
+          <li>Innovative Agentic AI Technology for Autonomous ESG Report Generation (ITRI)</li>
+          <li>Inclusive AI Dialogue Assistive Device Project, sub-project 3:<br>Multimodal Cross-lingual Task-Oriented Dialogue System for Inclusive Communication Support (NSTC)</li>
+          <li>Large Language Model Agent System for Smart City (III)</li>
         </ul>
       </div>
       <div class="timeline-item">
