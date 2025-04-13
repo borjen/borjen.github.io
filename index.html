@@ -11,35 +11,32 @@
   />
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#">陳柏臻 Bor-Jen Chen</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
-          <li class="nav-item"><a class="nav-link" href="#competitions">Competitions</a></li>
-          <li class="nav-item"><a class="nav-link" href="#activities">Club</a></li>
-          <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
-          <li class="nav-item">
-            <button id="langBtn" class="btn btn-sm btn-outline-light">中文</button>
-          </li>
-        </ul>
-      </div>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">陳柏臻 Bor-Jen Chen</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" id="nav-edu" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link" id="nav-exp" href="#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" id="nav-cert" href="#certifications">Certifications</a></li>
+        <li class="nav-item"><a class="nav-link" id="nav-port" href="#portfolio">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" id="nav-act" href="#activities">Club</a></li>
+        <li class="nav-item">
+          <button id="langBtn" class="btn btn-sm btn-outline-light">中文</button>
+        </li>
+      </ul>
     </div>
-  </nav>
-
+  </div>
+</nav>
 
   <!-- Header -->
   <header
@@ -62,11 +59,11 @@
 
 <!-- Sections -->
 <section id="education" class="py-5 alt-section">
-    <div class="container">
-      <h2 id="edu-title">Education</h2> <!-- 加上 id -->
-      <div id="edu-content">...</div>
-    </div>
-  </section>  
+  <div class="container">
+    <h2 id="edu-title">Education</h2>
+    <div id="edu-content"></div> <!-- 這裡會塞入 JS 中的內容 -->
+  </div>
+</section>
   
   <section id="experience" class="py-5 alt-section">
     <div class="container">
@@ -74,35 +71,7 @@
       <div id="exp-content">...</div>
     </div>
   </section>
-  
-  <section id="projects" class="py-5 alt-section">
-    <div class="container">
-      <h2 id="proj-title">Research Projects</h2>
-      <div id="proj-content">...</div>
-    </div>
-  </section>
-  
-  <section id="courses" class="py-5 alt-section">
-    <div class="container">
-      <h2 id="course-title">Courses</h2>
-      <div id="course-content">...</div>
-    </div>
-  </section>
-  
-  <section id="competitions" class="py-5 alt-section">
-    <div class="container">
-      <h2 id="comp-title">Competitions</h2>
-      <div id="comp-content">...</div>
-    </div>
-  </section>
-  
-  <section id="activities" class="py-5 alt-section">
-    <div class="container">
-      <h2 id="act-title">Club</h2>
-      <div id="act-content">...</div>
-    </div>
-  </section>
-  
+
   <section id="certifications" class="py-5 alt-section">
     <div class="container">
       <h2 id="cert-title">Certifications</h2>
@@ -110,19 +79,35 @@
     </div>
   </section>
   
+  <section id="portfolio" class="py-5 alt-section">
+    <div class="container">
+      <h2 id="portfolio-title">Portfolio</h2>
+      <div id="portfolio-content">...</div>
+    </div>
+  </section>
+   
+  <section id="activities" class="py-5 alt-section">
+    <div class="container">
+      <h2 id="act-title">Club</h2>
+      <div id="act-content">...</div>
+    </div>
+  </section>
+  
+
+  
 
   <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container text-center text-white">
       Copyright &copy; 陳柏臻 2025
       <div class="mt-3">
-        <a href="https://www.linkedin.com/in/yourprofile" target="_blank">
+        <a href="https://www.linkedin.com/in/bor-jen-chen-a23018280/" target="_blank">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="24" alt="LinkedIn" />
         </a>
-        <a href="https://github.com/yourusername" target="_blank">
+        <a href="https://github.com/borjen" target="_blank">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="24" alt="GitHub" />
         </a>
-        <a href="mailto:your@email.com">
+        <a href="chenborjen@gmail.com">
           <img src="https://img.icons8.com/ios-filled/50/ffffff/new-post.png" width="24" alt="Email" />
         </a>
       </div>

@@ -9,10 +9,6 @@ body {
   line-height: 1.6;
 }
 
-/* 導覽列與頁尾顏色統一深藍色 */
-.bg-dark {
-  background-color: #002f6c !important;
-}
 
 .navbar-dark .navbar-brand,
 .navbar-dark .nav-link,
@@ -24,6 +20,18 @@ footer {
   padding-top: 0.3rem;
   padding-bottom: 0.3rem;
 }
+
+.navbar-nav .nav-link {
+  font-size: 1.1rem; /* 預設約為 16px，可依需要改成 1.1rem、0.95rem 等 */
+  font-weight: 500;
+}
+
+/* 語言切換按鈕 */
+#langBtn {
+  font-size: 1rem;
+  padding: 4px 8px;
+}
+
 
 /* 個人照片 */
 .profile-img {
@@ -77,6 +85,7 @@ footer {
   margin-bottom: 0.5rem;
 }
 h2 {
+  text-align: left;
   font-size: 1.5rem;
   margin-top: 0;
   margin-bottom: 1rem;
@@ -121,3 +130,236 @@ footer img {
     padding: 0 1rem;
   }
 }
+
+/* === Timeline Style === */
+.timeline {
+  position: relative;
+  padding-left: 30px;
+  border-left: 2px solid #ddd;
+  margin: 0 auto;             /* 水平置中 */
+  margin-top: 40px; /* 與標題或其他區塊拉開距離 */
+}
+
+.timeline-item {
+  margin-bottom: 20px;
+  position: relative;
+  text-align: left;
+  padding-left: 10px;
+}
+
+/* 左側圓點樣式 */
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -9px;
+  top: 5px;
+  width: 15px;
+  height: 15px;
+  background-color: #6793d6;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0 0 0 2px #6793d6;
+}
+
+/* 工作標題 */
+.timeline-item h5 {
+  margin-bottom: 8px;
+  font-weight: bold;
+  padding-left: 0;
+  line-height: 1.4;
+}
+
+/* 日期樣式 */
+.timeline-item h5 span.text-muted {
+  padding-left: 6px;
+  padding-right: 6px;
+  color: #6c757d;
+}
+
+/* 條列內容 */
+.timeline-item ul {
+  padding-left: 20px;
+  margin-bottom: 0;
+}
+
+.timeline-item ul li {
+  margin-bottom: 4px;
+  line-height: 1.5;
+}
+
+#edu-content {
+  text-align: left;         /* 讓內容靠左 */
+  font-size: 1.25rem;       /* 與經歷內容接近 (約等於 h5) */
+  line-height: 1.6;
+  position: relative;
+  margin: 0 auto;             /* 水平置中 */
+  margin-top: 40px; /* 與標題或其他區塊拉開距離 */
+}
+
+.certificate-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start; /* 左對齊 */
+}
+
+.certificate-item {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  width: 240px;
+  transition: transform 0.2s ease;
+}
+
+.certificate-item:hover {
+  transform: scale(1.03);
+}
+
+.certificate-item img {
+  margin-top: 16px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.certificate-item div {
+  margin-top: 16px;
+  font-weight: 500;
+}
+
+
+
+.card-ai-awards {
+  background-image: url("../Portfolio_Best AI Awards.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.card-ai-final {
+  background-image: url("../Portfolio_AI Course Final.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.card-ai-case {
+  background-image: url("../Portfolio_AI Course Case Study.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.card-usr {
+  background-image: url("../Portfolio_USRxNTPU GenAI.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.card-fintech {
+  background-image: url("../Portfolio_FinTech N.FeaT.png");
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+
+/* 作品集整體容器 */
+.portfolio-cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 一行五張 */
+  gap: 16px;
+  margin-top: 1rem;
+}
+
+/* 單一作品項目容器（圖片 + 文字） */
+.portfolio-item {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.portfolio-item:hover {
+  transform: scale(1.03);
+  color: #0d6efd; /* hover 時整塊文字顏色變藍 */
+}
+
+/* 卡片圖片區 */
+.portfolio-card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 180px;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background-color: #f8f9fa;
+  background-size: cover;
+  background-position: center;
+  color: #000000;
+  text-decoration: none;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden;
+}
+
+
+/* 卡片內容要浮在遮罩上 */
+.portfolio-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* 卡片下方的文字說明 */
+.portfolio-caption {
+  margin-top: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #2b64cf;
+  line-height: 1.4;
+  transition: color 0.2s ease;
+}
+
+/* 粗體標題 */
+.portfolio-caption strong {
+  display: block;
+  margin-top: 4px;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #000000;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.8);
+}
+
+.portfolio-item:hover .portfolio-card {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* RWD 響應式調整 */
+@media (max-width: 992px) {
+  .portfolio-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .portfolio-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+.activity-list {
+  list-style-type: disc;     /* 用圓點標記 */
+  text-align: left;         /* 讓內容靠左 */
+  font-size: 1.25rem;       /* 與經歷內容接近 (約等於 h5) */
+  line-height: 1.6;
+  position: relative;
+  margin: 0 auto;             /* 水平置中 */
+  margin-top: 40px; /* 與標題或其他區塊拉開距離 */
+}
+
+.activity-list li {
+  margin-bottom: 1em;     /* 每個項目間距 */
+  line-height: 1;
+}
+
