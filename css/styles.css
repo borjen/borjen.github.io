@@ -230,13 +230,13 @@ footer img {
 
 @media (max-width: 992px) {
   .certificate-item {
-    width: 40%; /* 平板時一行顯示兩張 */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 576px) {
   .certificate-item {
-    width: 40%; /* 手機時一行兩張 */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -350,15 +350,16 @@ footer img {
 /* RWD 響應式調整 */
 @media (max-width: 992px) {
   .portfolio-cards {
-    width: 40%; /* 平板時一行顯示兩張 */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 576px) {
   .portfolio-cards {
-    width: 40%; /* 手機時一行兩張 */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
+
 
 
 .activity-list {

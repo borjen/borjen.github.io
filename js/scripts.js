@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
     </div>
     <div class="portfolio-item">
       <a href="https://drive.google.com/file/d/1xvM__BepmZvymIlAN7ENBCINGyo4b3TA/view?usp=drive_link" target="_blank" class="portfolio-card card-usr"></a>
-      <div class="portfolio-caption">2024 NTPU USR x 生成式AI行銷競賽<br><strong>三峽湧翠，茶樹傳香；永續低碳的自然之選</strong></div>
+      <div class="portfolio-caption">2024 NTPU USR x 生成式AI<br>永續共創行銷企劃競賽<br><strong>三峽湧翠，茶樹傳香：永續低碳的自然之選</strong></div>
     </div>
     <div class="portfolio-item">
       <a href="https://drive.google.com/file/d/1gHE3q-X5priZF2nI7GrUh7oN3z0Gz-lV/view?usp=drive_link" target="_blank" class="portfolio-card card-fintech"></a>
