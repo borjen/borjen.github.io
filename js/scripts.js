@@ -191,7 +191,7 @@ document.addEventListener("DOMContentLoaded", () => {
       </div>
       <div class="portfolio-item">
         <a href="https://drive.google.com/file/d/1gHE3q-X5priZF2nI7GrUh7oN3z0Gz-lV/view?usp=drive_link" target="_blank" class="portfolio-card card-fintech"></a>
-        <div class="portfolio-caption">2022 FinTech Competition<br><strong>N.FeaT Freelance Creator Streaming Platform</strong></div>
+        <div class="portfolio-caption">2022 FinTech Competition<br><strong>N.FeaT. Freelance Creator Streaming Platform</strong></div>
       </div>
     </div>
   `,
