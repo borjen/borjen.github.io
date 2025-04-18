@@ -83,10 +83,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   port: `
   <div class="portfolio-cards">
+<!--
     <div class="portfolio-item">
-      <a href="https://youtu.be/CgjfBryTFVQ" target="_blank" class="portfolio-card card-ai-awards"></a>
-      <div class="portfolio-caption">2025 經濟部智慧創新大賞<br><strong>美國關稅大師</strong></div>
-    </div>
+       <a href="https://youtu.be/CgjfBryTFVQ" target="_blank" class="portfolio-card card-ai-awards"></a>
+       <div class="portfolio-caption">2025 經濟部智慧創新大賞<br><strong>美國關稅大師</strong></div>
+     </div>
+-->
     <div class="portfolio-item">
       <a href="https://drive.google.com/file/d/1d_qoaqCPd58EnJ_o_iHNcUHrAwfCT0pM/view?usp=drive_link" target="_blank" class="portfolio-card card-ai-final"></a>
       <div class="portfolio-caption">2024 人工智慧課程期末專題<br><strong>智慧城市交通查詢代理人系統</strong></div>
@@ -173,10 +175,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   port: `
     <div class="portfolio-cards">
+<!--
       <div class="portfolio-item">
         <a href="https://youtu.be/CgjfBryTFVQ" target="_blank" class="portfolio-card card-ai-awards"></a>
         <div class="portfolio-caption">2025 Best AI Awards<br><strong>Master of American Tariffs</strong></div>
       </div>
+-->
       <div class="portfolio-item">
         <a href="https://drive.google.com/file/d/1d_qoaqCPd58EnJ_o_iHNcUHrAwfCT0pM/view?usp=drive_link" target="_blank" class="portfolio-card card-ai-final"></a>
         <div class="portfolio-caption">2024 AI Course Project<br><strong>LLM-Based Traffic Query Agent for Smart Cities</strong></div>
