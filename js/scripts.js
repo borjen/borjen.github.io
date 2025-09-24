@@ -7,6 +7,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const edu = document.getElementById("edu-content");
   const exp = document.getElementById("exp-content");
   const cert = document.getElementById("cert-content");
+  const pub = document.getElementById("pub-content"); 
+  const award = document.getElementById("award-content"); 
   const port = document.getElementById("portfolio-content");
   const act = document.getElementById("act-content");
 
@@ -14,6 +16,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const eduTitle = document.getElementById("edu-title");
   const expTitle = document.getElementById("exp-title");
   const certTitle = document.getElementById("cert-title");
+  const pubTitle = document.getElementById("pub-title");
+  const awardTitle = document.getElementById("award-title");
   const portTitle = document.getElementById("portfolio-title");
   const actTitle = document.getElementById("act-title");
 
@@ -21,6 +25,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const navEdu = document.getElementById("nav-edu");
   const navExp = document.getElementById("nav-exp");
   const navCert = document.getElementById("nav-cert");
+  const navPub = document.getElementById("nav-pub");       
+  const navAward = document.getElementById("nav-award");  
   const navPort = document.getElementById("nav-port");
   const navAct = document.getElementById("nav-act");
     
@@ -31,6 +37,8 @@ document.addEventListener("DOMContentLoaded", () => {
       edu: "學歷",
       exp: "經歷",
       cert: "證照",
+      pub: "論文發表",
+      award: "競賽得獎",
       port: "作品集",
       act: "社團活動",
 
@@ -45,8 +53,9 @@ document.addEventListener("DOMContentLoaded", () => {
     exp: `
     <div class="timeline">
       <div class="timeline-item">
-        <h5><span class="text-muted">2024.08 - 現在</span>&nbsp;臺北大學智慧金融創新科技實驗室 <a href="https://www.aifitesg.org/" target="_blank" style="color: inherit; text-decoration: underline;">(IFIT Lab)<a> 研究員</h5>
+        <h5><span class="text-muted">2024.08 - 現在</span>&nbsp;臺北大學智慧金融創新科技實驗室 <a href="https://www.aifitesg.org/" target="_blank" style="color: inherit; text-decoration: underline;">(IFIT Lab)<a> 研究助理</h5>
         <ul>
+          <li>生成式AI多智慧代理系統結合大型語言模型檢索增強生成技術於ESG永續報告自動化 (國科會)</li>
           <li>創新智慧代理 AI 技術於自主永續報告生成 (工研院)</li>
           <li>數位支持、溝通無礙：AI科技協助語言障礙者溝通輔具之研發、支持與推廣<br>子計畫三：包容溝通支持多模態跨語言任務導向對話系統 (國科會)</li>
           <li>智慧城市大型語言模型代理人系統 (資策會)</li>
@@ -55,6 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <div class="timeline-item">
         <h5><span class="text-muted">2024.08 - 現在</span>&nbsp;臺北大學商學院 EMI教學助理</h5>
         <ul>
+          <li>Python會計應用</li>
           <li>智慧金融量化分析</li>
           <li>永續數據分析</li>
         </ul>
@@ -67,7 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
       </div>
     </div>
   `,
-  
+
   cert: `
   <div class="certificate-grid">
     <a href="https://www.credly.com/badges/c042b203-3d71-4608-abd5-d4f85d54db9f/public_url" target="_blank" class="certificate-item">
@@ -80,6 +90,25 @@ document.addEventListener("DOMContentLoaded", () => {
     </a>
   </div>
 `,
+
+  pub: `
+    <div class="activity-list">
+      <li><b>Bor-Jen Chen</b>, Wen-Hsin Hsiao, Hsin-Ting Lu, and Min-Yuh Day (2025), "Fine-Tuning and Prompt-Based Methods for Temporal Reasoning in Multilingual Financial Texts", The 16th International Workshop on Mining and Analyzing Social Networks for Decision Support (MSNDS 2025), in Proceedings of the 2025 International Conference on Advances in Social Networks Analysis and Mining (ASONAM 2025), Niagara Falls, Ontario, Canada, August 25-28, 2025.</li>
+      <li>Cheng-Yun Wu, <b>Bor-Jen Chen</b>, Wen-Hsin Hsiao, Hsin-Ting Lu, Yue-Shan Chang, Chen-Yu Chiang, Chao-Yin Lin, Yu-An Lin and Min-Yuh Day (2025), Implementing an Inclusive Communication System with RAG-enhanced Multilingual and Multimodal Dialogue Capabilities, in Proceedings of the 2025 Taiwan Symposium On Cloud And Services Computing (TWSC2 2025), New Taipei City, Taiwan, July 3-4, 2025.</li>
+      <li><b>Bor-Jen Chen</b>, Wen-Hsin Hsiao, Jun-Yu Wu, Cheng-Yun Wu and Min-Yuh Day (2025), IMNTPU at the NTCIR-18 FinArg-2: Fine-Tuning and Prompt-Based Learning for Temporal Argument Detection and Claim Validity Assessment, in Proceedings of the 18th NTCIR Conference on Evaluation of Information Access Technologies (NTCIR-18), Tokyo, Japan, June 10-13, 2025.</li>
+      <li>Jun-Yu Wu, Cheng-Yun Wu, <b>Bor-Jen Chen</b>, Wen-Hsin Hsiao and Min-Yuh Day (2025), IMNTPU at NTCIR-18 MedNLP-CHAT Task: Evaluating Agentic AI for Multilingual Risk Assessment in Medical Chatbots, in Proceedings of the 18th NTCIR Conference on Evaluation of Information Access Technologies (NTCIR-18), Tokyo, Japan, June 10-13, 2025.</li>
+      <li><b>Bor-Jen Chen</b> and Min-Yuh Day (2025), Generative AI in Enhancing ESG Reporting: ESG Data Consistency and Annotation, The 36th International Conference on Information Management (ICIM 2025), New Taipei City, Taiwan, May 16, 2025.</li>
+      <li>Min-Yuh Day, Ting-Chi Wang, Yu-Chun Cheng, Jun-Yu Wu, <b>Bor-Jen Chen</b> (2025), "Developing Generative AI-driven ESG Report Generation System", The 30th International Conference on IT Applications and Management (ITAM), Kathmandu, Nepal, February 12-16, 2025.</li>
+      <li>Min-Yuh Day, Hsin-Ting Lu, Xu-You Lan, and <b>Bor-Jen Chen</b>, "Large Language Model and AI Agent System for Smart City: A Systematic Literature Review", The 29th Workshop on Information Management & Practice (IMP 2024), Taipei, Taiwan, November 21, 2024.</li>
+    </ul>
+  `,
+  award: `
+   <ul class="activity-list">
+      <li>2025 臺北大學AI智慧應用創新競賽 — 優選獎</li>    
+      <li>2025 TSC 第十屆崇越行銷大賞 AI 應用行銷競賽 — 佳作</li>
+      <li>2025 經濟部智慧創新大賞 — 決賽入圍</li>
+   </ul>
+  `,
 
   port: `
   <div class="portfolio-cards">
@@ -124,6 +153,8 @@ document.addEventListener("DOMContentLoaded", () => {
       edu: "Education",
       exp: "Work Experience",
       cert: "Certifications",
+      pub: "Publications",
+      award: "Awards",
       port: "Portfolio",
       act: "Club Activities",
     },
@@ -139,6 +170,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <div class="timeline-item">
         <h5><span class="text-muted">2024.08 - Now</span>&nbsp;Researcher, Intelligent Financial Innovation Technology Lab <a href="https://www.aifitesg.org/" target="_blank" style="color: inherit; text-decoration: underline;">(IFIT Lab)<a>, NTPU</h5>
         <ul>
+          <li>Generative AI Multi-Agent Systems with LLM-Based RAG for ESG Reporting Automation (NSTC)</li>
           <li>Innovative Agentic AI Technology for Autonomous ESG Report Generation (ITRI)</li>
           <li>Inclusive AI Dialogue Assistive Device Project, sub-project 3:<br>Multimodal Cross-lingual Task-Oriented Dialogue System for Inclusive Communication Support (NSTC)</li>
           <li>Large Language Model Agent System for Smart City (III)</li>
@@ -147,6 +179,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <div class="timeline-item">
         <h5><span class="text-muted">2024.08 - Now</span>&nbsp;EMI Teaching Assistent, College Of Business, NTPU</h5>
         <ul>
+          <li>Python for Accounting Applications</li>
           <li>Artificial Intelligence in Finance and Quantitative Analysis</li>
           <li>Sustainability and ESG Data Analytics</li>
         </ul>
@@ -172,6 +205,25 @@ document.addEventListener("DOMContentLoaded", () => {
     </a>
   </div>
 `,
+
+  pub: `
+    <div class="activity-list">
+      <li><b>Bor-Jen Chen</b>, Wen-Hsin Hsiao, Hsin-Ting Lu, and Min-Yuh Day (2025), "Fine-Tuning and Prompt-Based Methods for Temporal Reasoning in Multilingual Financial Texts", The 16th International Workshop on Mining and Analyzing Social Networks for Decision Support (MSNDS 2025), in Proceedings of the 2025 International Conference on Advances in Social Networks Analysis and Mining (ASONAM 2025), Niagara Falls, Ontario, Canada, August 25-28, 2025.</li>
+      <li>Cheng-Yun Wu, <b>Bor-Jen Chen</b>, Wen-Hsin Hsiao, Hsin-Ting Lu, Yue-Shan Chang, Chen-Yu Chiang, Chao-Yin Lin, Yu-An Lin and Min-Yuh Day (2025), Implementing an Inclusive Communication System with RAG-enhanced Multilingual and Multimodal Dialogue Capabilities, in Proceedings of the 2025 Taiwan Symposium On Cloud And Services Computing (TWSC2 2025), New Taipei City, Taiwan, July 3-4, 2025.</li>
+      <li><b>Bor-Jen Chen</b>, Wen-Hsin Hsiao, Jun-Yu Wu, Cheng-Yun Wu and Min-Yuh Day (2025), IMNTPU at the NTCIR-18 FinArg-2: Fine-Tuning and Prompt-Based Learning for Temporal Argument Detection and Claim Validity Assessment, in Proceedings of the 18th NTCIR Conference on Evaluation of Information Access Technologies (NTCIR-18), Tokyo, Japan, June 10-13, 2025.</li>
+      <li>Jun-Yu Wu, Cheng-Yun Wu, <b>Bor-Jen Chen</b>, Wen-Hsin Hsiao and Min-Yuh Day (2025), IMNTPU at NTCIR-18 MedNLP-CHAT Task: Evaluating Agentic AI for Multilingual Risk Assessment in Medical Chatbots, in Proceedings of the 18th NTCIR Conference on Evaluation of Information Access Technologies (NTCIR-18), Tokyo, Japan, June 10-13, 2025.</li>
+      <li><b>Bor-Jen Chen</b> and Min-Yuh Day (2025), Generative AI in Enhancing ESG Reporting: ESG Data Consistency and Annotation, The 36th International Conference on Information Management (ICIM 2025), New Taipei City, Taiwan, May 16, 2025.</li>
+      <li>Min-Yuh Day, Ting-Chi Wang, Yu-Chun Cheng, Jun-Yu Wu, <b>Bor-Jen Chen</b> (2025), "Developing Generative AI-driven ESG Report Generation System", The 30th International Conference on IT Applications and Management (ITAM), Kathmandu, Nepal, February 12-16, 2025.</li>
+      <li>Min-Yuh Day, Hsin-Ting Lu, Xu-You Lan, and <b>Bor-Jen Chen</b>, "Large Language Model and AI Agent System for Smart City: A Systematic Literature Review", The 29th Workshop on Information Management & Practice (IMP 2024), Taipei, Taiwan, November 21, 2024.</li>
+    </ul>
+  `,
+  award: `
+    <div class="activity-list">
+      <li>2025 National Taipei University AI Smart Application Innovation Competition - Excellent Award</li>
+      <li>2025 10th TSC Marketing Awards AI Application Marketing Competition - Honorable Mention</li>
+      <li>Ministry of Economic Affairs Best AI Awards - Finalists</li>
+    </ul>
+  `,
 
   port: `
     <div class="portfolio-cards">
@@ -216,12 +268,16 @@ document.addEventListener("DOMContentLoaded", () => {
     edu.innerHTML = lang.edu;
     exp.innerHTML = lang.exp;
     cert.innerHTML = lang.cert;
+    pub.innerHTML = lang.pub;
+    award.innerHTML = lang.award;
     port.innerHTML = lang.port;
     act.innerHTML = lang.act;
 
     eduTitle.textContent = lang.titles.edu;
     expTitle.textContent = lang.titles.exp;
     certTitle.textContent = lang.titles.cert;
+    pubTitle.textContent = lang.titles.pub;
+    awardTitle.textContent = lang.titles.award;
     portTitle.textContent = lang.titles.port;
     actTitle.textContent = lang.titles.act;
 
@@ -229,6 +285,8 @@ document.addEventListener("DOMContentLoaded", () => {
     navEdu.textContent = lang.titles.edu;
     navExp.textContent = lang.titles.exp;
     navCert.textContent = lang.titles.cert;
+    navPub.textContent = lang.titles.pub;
+    navAward.textContent = lang.titles.award;
     navPort.textContent = lang.titles.port;
     navAct.textContent = lang.titles.act;
   };

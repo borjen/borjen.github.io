@@ -361,19 +361,18 @@ footer img {
 }
 
 
-
 .activity-list {
-  list-style-type: disc;     /* 用圓點標記 */
-  text-align: left;         /* 讓內容靠左 */
-  font-size: 1.25rem;       /* 與經歷內容接近 (約等於 h5) */
+  list-style-type: disc;     /* 使用圓點 */
+  list-style-position: outside; /* 確保點點在外側 */
+  padding-left: 1.5rem;      /* 留出空間讓文字緊跟在點後面 */
+  margin: 0;
+  text-align: left;          /* 文字靠左 */
+  font-size: 1.25rem;
   line-height: 1.6;
-  position: relative;
-  margin: 0 auto;             /* 水平置中 */
-  margin-top: 40px; /* 與標題或其他區塊拉開距離 */
 }
 
 .activity-list li {
-  margin-bottom: 1em;     /* 每個項目間距 */
-  line-height: 1;
+  margin-bottom: 0.5em;       /* 每項之間的間距 */
+  text-align: left;           /* 確保每列文字靠左 */
 }
 
