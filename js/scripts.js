@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <li>第一名, 2025年日本 NTCIR-18 MedNLP-CHAT：醫療自然語言處理對話系統評估-醫病對話中的醫療、倫理與法律風險判定法文與多語言語料法律風險分項 (The first place in the Legal Risk (LR) subtask using Franch and Multilingual datasets of the NTCIR-18 MedNLP-CHAT: Medical Natural Language Processing for AI Chat, 2025)</li>
       <li><b>NTCIR-18 最佳口頭報告獎</b>, 2025年日本 NTCIR-18 FinArg-2：財務金融論證的時間推理 (NTCIR-18 Best Poster Presentation Award, NTCIR-18 FinArg-2: Temporal Inference of Financial Arguments, 2025)</li>
       <li><b>NTCIR-18 最佳口頭報告獎</b>, 2025年日本 NTCIR-18 MedNLP-CHAT：醫療自然語言處理對話系統評估 (NTCIR-18 Best Oral Presentation Award, NTCIR-18 MedNLP-CHAT: Medical Natural Language Processing for AI Chat, 2025)</li>
-      <li><b>NTCIR-18 NTCIR-18 最佳海報展示獎</b>, 2025年日本 NTCIR-18 FinArg-2：財務金融論證的時間推理 (NTCIR-18 Best Poster Presentation Award, NTCIR-18 FinArg-2: Temporal Inference of Financial Arguments, 2025)</li>
+      <li><b>NTCIR-18 最佳海報展示獎</b>, 2025年日本 NTCIR-18 FinArg-2：財務金融論證的時間推理 (NTCIR-18 Best Poster Presentation Award, NTCIR-18 FinArg-2: Temporal Inference of Financial Arguments, 2025)</li>
       <li><b>Outstanding International Paper Award</b>, Bor-Jen Chen and Min-Yuh Day (2025), Generative AI in Enhancing ESG Reporting: ESG Data Consistency and Annotation, The 36th International Conference on Information Management (ICIM 2025), New Taipei City, Taiwan, May 16, 2025.</li>
       <li>2025 臺北大學AI智慧應用創新競賽 — 優選獎</li>    
       <li>2025 TSC 第十屆崇越行銷大賞 AI 應用行銷競賽 — 佳作</li>
