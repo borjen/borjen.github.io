@@ -237,7 +237,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <li><b>Best Paper Award</b>, Bor-Jen Chen and Min-Yuh Day (2025), AI-Assisted ESG Reporting: A RAG-Based Framework for Accurate and Stylistically Appropriate Text Generation", The 31st International Conference on IT Applications and Management (ITAM), Jinju, Korea, October 26-30, 2025.</li>
       <li>The first place in the evaluation of a Claim’s Validity Period on Social Media subtask of the NTCIR-18 FinArg-2 Task, 2025</li>
       <li>The first place in the Legal Risk (LR) subtask using Franch and Multilingual datasets of the NTCIR-18 MedNLP-CHAT: Medical Natural Language Processing for AI Chat, 2025</li>
-      <li><b>NTCIR-18 Best Poster Presentation Award</b>, NTCIR-18 FinArg-2: Temporal Inference of Financial Arguments, 2025</li>
+      <li><b>NTCIR-18 Best Oral Presentation Award</b>, NTCIR-18 FinArg-2: Temporal Inference of Financial Arguments, 2025</li>
       <li><b>NTCIR-18 Best Oral Presentation Award</b>, NTCIR-18 MedNLP-CHAT: Medical Natural Language Processing for AI Chat, 2025</li>
       <li><b>NTCIR-18 Best Poster Presentation Award</b>, NTCIR-18 FinArg-2: Temporal Inference of Financial Arguments, 2025</li>
       <li><b>Outstanding International Paper Award</b>, Bor-Jen Chen and Min-Yuh Day (2025), Generative AI in Enhancing ESG Reporting: ESG Data Consistency and Annotation, The 36th International Conference on Information Management (ICIM 2025), New Taipei City, Taiwan, May 16, 2025.</li>
