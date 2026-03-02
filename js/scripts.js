@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", () => {
   `,
   award: `
    <ul class="activity-list">
-      <li>2025 2025 NTPU USR 永續科技提案競賽 — 第一名</li>
+      <li>2025 NTPU USR 永續科技提案競賽 — 第一名</li>
       <li><b>Best Paper Award</b>, Bor-Jen Chen and Min-Yuh Day (2025), AI-Assisted ESG Reporting: A RAG-Based Framework for Accurate and Stylistically Appropriate Text Generation", The 31st International Conference on IT Applications and Management (ITAM), Jinju, Korea, October 26-30, 2025.</li>
       <li>第一名，2025年日本 NTCIR-18 FinArg-2 財務金融論證的時間推理社群媒體聲明有效期間評估分項 (The first place in the evaluation of a Claim’s Validity Period on Social Media subtask of the NTCIR-18 FinArg-2 Task, 2025) [NTCIR-18 Online Proceedings]</li>
       <li>第一名, 2025年日本 NTCIR-18 MedNLP-CHAT：醫療自然語言處理對話系統評估-醫病對話中的醫療、倫理與法律風險判定法文與多語言語料法律風險分項 (The first place in the Legal Risk (LR) subtask using Franch and Multilingual datasets of the NTCIR-18 MedNLP-CHAT: Medical Natural Language Processing for AI Chat, 2025)</li>
