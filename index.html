@@ -4,133 +4,93 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bor-Jen Chen</title>
+  <link rel="icon" href="assets/favicon.ico" />
   <link href="css/styles.css" rel="stylesheet" />
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
 </head>
 <body>
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container">
-    <a class="navbar-brand" href="#">陳柏臻 Bor-Jen Chen</a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNav"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" id="nav-edu" href="#education">Education</a></li>
-        <li class="nav-item"><a class="nav-link" id="nav-exp" href="#experience">Experience</a></li>
-        <li class="nav-item"><a class="nav-link" id="nav-cert" href="#certifications">Certifications</a></li>
-        <li class="nav-item"><a class="nav-link" id="nav-pub" href="#publication">Publications</a></li>
-        <li class="nav-item"><a class="nav-link" id="nav-award" href="#award">Awards</a></li>
-        <li class="nav-item"><a class="nav-link" id="nav-port" href="#portfolio">Portfolio</a></li>
-        <li class="nav-item"><a class="nav-link" id="nav-act" href="#activities">Club</a></li>
-        <li class="nav-item">
-          <button id="langBtn" class="btn btn-sm btn-outline-light">中文</button>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
 
-  <!-- Header -->
-  <header
-    class="py-5 bg-image-full"
-    style="background-image: url('sky.jpg'); background-size: cover; background-position: center;"
-  >
-    <div class="text-center my-5">
-      <img
-        class="img-fluid profile-img mb-3 fade-in"
-        src="410880049-1.jpg"
-        alt="Profile Picture"
-      />
-      <h1 class="text-white">陳柏臻<br>Bor-Jen Chen</h1>
-      <p class="intro-text" id="intro">
-        Graduate Institute of Information Management, National Taipei University
-      </p>
-    </div>
-  </header>
+  <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
 
+  <div class="layout">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-hero"></div>
+      <div class="sidebar-inner">
+        <img class="profile-img fade-in" src="410880049-1.jpg" alt="Profile Picture" />
+        <h1>陳柏臻<br>Bor-Jen Chen</h1>
+        <p class="intro-text" id="intro">Graduate Institute of Information Management, National Taipei University</p>
 
-<!-- Sections -->
-<section id="education" class="py-5 alt-section">
-  <div class="container">
-    <h2 id="edu-title">Education</h2>
-    <div id="edu-content"></div> <!-- 這裡會塞入 JS 中的內容 -->
-  </div>
-</section>
-  
-  <section id="experience" class="py-5 alt-section">
-    <div class="container">
-      <h2 id="exp-title">Work Experience</h2>
-      <div id="exp-content">...</div>
-    </div>
-  </section>
+        <nav class="side-nav">
+          <a class="nav-link" id="nav-edu" href="#education">Education</a>
+          <a class="nav-link" id="nav-exp" href="#experience">Experience</a>
+          <a class="nav-link" id="nav-cert" href="#certifications">Certifications</a>
+          <a class="nav-link" id="nav-pub" href="#publication">Publications</a>
+          <a class="nav-link" id="nav-award" href="#award">Awards</a>
+          <a class="nav-link" id="nav-port" href="#portfolio">Portfolio</a>
+          <a class="nav-link" id="nav-act" href="#activities">Club</a>
+        </nav>
 
-  <section id="certifications" class="py-5 alt-section">
-    <div class="container">
-      <h2 id="cert-title">Certifications</h2>
-      <div id="cert-content">...</div>
-    </div>
-  </section>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/bor-jen-chen-a23018280/" target="_blank" aria-label="LinkedIn">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" />
+          </a>
+          <a href="https://github.com/borjen" target="_blank" aria-label="GitHub">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+          </a>
+          <a href="mailto:chenborjen@gmail.com" aria-label="Email">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/new-post.png" alt="Email" />
+          </a>
+        </div>
 
-  <section id="publication" class="py-5 alt-section">
-    <div class="container">
-      <h2 id="pub-title">Certifications</h2>
-      <div id="pub-content">...</div>
-    </div>
-  </section>
-
-  <section id="award" class="py-5 alt-section">
-    <div class="container">
-      <h2 id="award-title">Certifications</h2>
-      <div id="award-content">...</div>
-    </div>
-  </section>
-
-  <section id="portfolio" class="py-5 alt-section">
-    <div class="container">
-      <h2 id="portfolio-title">Portfolio</h2>
-      <div id="portfolio-content">...</div>
-    </div>
-  </section>
-   
-  <section id="activities" class="py-5 alt-section">
-    <div class="container">
-      <h2 id="act-title">Club</h2>
-      <div id="act-content">...</div>
-    </div>
-  </section>
-  
-
-  
-
-  <!-- Footer -->
-  <footer class="py-5 bg-dark">
-    <div class="container text-center text-white">
-      Copyright &copy; 陳柏臻 2025
-      <div class="mt-3">
-        <a href="https://www.linkedin.com/in/bor-jen-chen-a23018280/" target="_blank">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="24" alt="LinkedIn" />
-        </a>
-        <a href="https://github.com/borjen" target="_blank">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="24" alt="GitHub" />
-        </a>
-        <a href="chenborjen@gmail.com">
-          <img src="https://img.icons8.com/ios-filled/50/ffffff/new-post.png" width="24" alt="Email" />
-        </a>
+        <button id="langBtn" class="lang-btn">中文</button>
       </div>
-    </div>
-  </footer>
+    </aside>
 
-<!-- Scripts -->
-<script src="js/scripts.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="scrim" id="scrim"></div>
+
+    <main class="content">
+      <section id="education" class="card-section">
+        <h2 id="edu-title">Education</h2>
+        <div id="edu-content"></div>
+      </section>
+
+      <section id="experience" class="card-section">
+        <h2 id="exp-title">Work Experience</h2>
+        <div id="exp-content"></div>
+      </section>
+
+      <section id="certifications" class="card-section">
+        <h2 id="cert-title">Certifications</h2>
+        <div id="cert-content"></div>
+      </section>
+
+      <section id="publication" class="card-section">
+        <h2 id="pub-title">Publications</h2>
+        <div id="pub-content"></div>
+      </section>
+
+      <section id="award" class="card-section">
+        <h2 id="award-title">Awards</h2>
+        <div id="award-content"></div>
+      </section>
+
+      <section id="portfolio" class="card-section">
+        <h2 id="portfolio-title">Portfolio</h2>
+        <div id="portfolio-content"></div>
+      </section>
+
+      <section id="activities" class="card-section">
+        <h2 id="act-title">Club</h2>
+        <div id="act-content"></div>
+      </section>
+
+      <footer class="site-footer">
+        Copyright &copy; 陳柏臻 2025
+      </footer>
+    </main>
+  </div>
+
+  <script src="js/scripts.js"></script>
 </body>
+</html>

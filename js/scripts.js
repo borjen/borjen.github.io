@@ -1,4 +1,47 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // 手機版選單開關
+  const menuToggle = document.getElementById("menuToggle");
+  const sidebar = document.getElementById("sidebar");
+  const scrim = document.getElementById("scrim");
+
+  const closeMenu = () => {
+    sidebar.classList.remove("open");
+    scrim.classList.remove("show");
+    menuToggle.setAttribute("aria-expanded", "false");
+  };
+
+  menuToggle.addEventListener("click", () => {
+    const isOpen = sidebar.classList.toggle("open");
+    scrim.classList.toggle("show", isOpen);
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+  });
+
+  scrim.addEventListener("click", closeMenu);
+  sidebar.querySelectorAll(".nav-link").forEach((link) => {
+    link.addEventListener("click", closeMenu);
+  });
+
+  // 捲動時反白目前所在區塊的導覽項目
+  const navLinks = Array.from(sidebar.querySelectorAll(".nav-link"));
+  const sections = navLinks
+    .map((link) => document.querySelector(link.getAttribute("href")))
+    .filter(Boolean);
+
+  const setActiveLink = () => {
+    let current = sections[0];
+    for (const section of sections) {
+      if (section.getBoundingClientRect().top - 100 <= 0) {
+        current = section;
+      }
+    }
+    navLinks.forEach((link) => {
+      link.classList.toggle("active", link.getAttribute("href") === `#${current.id}`);
+    });
+  };
+
+  window.addEventListener("scroll", setActiveLink);
+  setActiveLink();
+
   const langBtn = document.getElementById("langBtn");
   let isEnglish = true;
 
@@ -56,7 +99,6 @@ document.addEventListener("DOMContentLoaded", () => {
         <h5><span class="text-muted">2024.08 - 現在</span>&nbsp;臺北大學智慧金融創新科技實驗室 <a href="https://www.aifitesg.org/" target="_blank" style="color: inherit; text-decoration: underline;">(IFIT Lab)<a> 研究助理</h5>
         <ul>
           <li>生成式AI多智慧代理系統結合大型語言模型檢索增強生成技術於ESG永續報告自動化 (國科會)</li>
-          <li>前瞻AI技術人才培育-智慧代理與實體AI機器人課程推動計畫 (教育部)</li>
           <li>創新智慧代理 AI 技術於自主永續報告生成 (工研院)</li>
           <li>數位支持、溝通無礙：AI科技協助語言障礙者溝通輔具之研發、支持與推廣<br>子計畫三：包容溝通支持多模態跨語言任務導向對話系統 (國科會)</li>
           <li>智慧城市大型語言模型代理人系統 (資策會)</li>
@@ -65,7 +107,6 @@ document.addEventListener("DOMContentLoaded", () => {
       <div class="timeline-item">
         <h5><span class="text-muted">2024.08 - 現在</span>&nbsp;臺北大學商學院 EMI教學助理</h5>
         <ul>
-          <li>軟體工程</li>
           <li>Python會計應用</li>
           <li>智慧金融量化分析</li>
           <li>永續數據分析</li>
@@ -107,13 +148,12 @@ document.addEventListener("DOMContentLoaded", () => {
   `,
   award: `
    <ul class="activity-list">
-      <li>2025 NTPU USR 永續科技提案競賽 — 第一名</li>
       <li><b>Best Paper Award</b>, Bor-Jen Chen and Min-Yuh Day (2025), AI-Assisted ESG Reporting: A RAG-Based Framework for Accurate and Stylistically Appropriate Text Generation", The 31st International Conference on IT Applications and Management (ITAM), Jinju, Korea, October 26-30, 2025.</li>
       <li>第一名，2025年日本 NTCIR-18 FinArg-2 財務金融論證的時間推理社群媒體聲明有效期間評估分項 (The first place in the evaluation of a Claim’s Validity Period on Social Media subtask of the NTCIR-18 FinArg-2 Task, 2025) [NTCIR-18 Online Proceedings]</li>
       <li>第一名, 2025年日本 NTCIR-18 MedNLP-CHAT：醫療自然語言處理對話系統評估-醫病對話中的醫療、倫理與法律風險判定法文與多語言語料法律風險分項 (The first place in the Legal Risk (LR) subtask using Franch and Multilingual datasets of the NTCIR-18 MedNLP-CHAT: Medical Natural Language Processing for AI Chat, 2025)</li>
       <li><b>NTCIR-18 最佳口頭報告獎</b>, 2025年日本 NTCIR-18 FinArg-2：財務金融論證的時間推理 (NTCIR-18 Best Poster Presentation Award, NTCIR-18 FinArg-2: Temporal Inference of Financial Arguments, 2025)</li>
       <li><b>NTCIR-18 最佳口頭報告獎</b>, 2025年日本 NTCIR-18 MedNLP-CHAT：醫療自然語言處理對話系統評估 (NTCIR-18 Best Oral Presentation Award, NTCIR-18 MedNLP-CHAT: Medical Natural Language Processing for AI Chat, 2025)</li>
-      <li><b>NTCIR-18 最佳海報展示獎</b>, 2025年日本 NTCIR-18 FinArg-2：財務金融論證的時間推理 (NTCIR-18 Best Poster Presentation Award, NTCIR-18 FinArg-2: Temporal Inference of Financial Arguments, 2025)</li>
+      <li><b>NTCIR-18 NTCIR-18 最佳海報展示獎</b>, 2025年日本 NTCIR-18 FinArg-2：財務金融論證的時間推理 (NTCIR-18 Best Poster Presentation Award, NTCIR-18 FinArg-2: Temporal Inference of Financial Arguments, 2025)</li>
       <li><b>Outstanding International Paper Award</b>, Bor-Jen Chen and Min-Yuh Day (2025), Generative AI in Enhancing ESG Reporting: ESG Data Consistency and Annotation, The 36th International Conference on Information Management (ICIM 2025), New Taipei City, Taiwan, May 16, 2025.</li>
       <li>2025 臺北大學AI智慧應用創新競賽 — 優選獎</li>    
       <li>2025 TSC 第十屆崇越行銷大賞 AI 應用行銷競賽 — 佳作</li>
@@ -182,7 +222,6 @@ document.addEventListener("DOMContentLoaded", () => {
         <h5><span class="text-muted">2024.08 - Now</span>&nbsp;Researcher, Intelligent Financial Innovation Technology Lab <a href="https://www.aifitesg.org/" target="_blank" style="color: inherit; text-decoration: underline;">(IFIT Lab)<a>, NTPU</h5>
         <ul>
           <li>Generative AI Multi-Agent Systems with LLM-Based RAG for ESG Reporting Automation (NSTC)</li>
-          <li>Physical AI and Physical AI Robotics Curriculum Development Project, Forward-Looking AI Talent Cultivation Program (MOE)</li>
           <li>Innovative Agentic AI Technology for Autonomous ESG Report Generation (ITRI)</li>
           <li>Inclusive AI Dialogue Assistive Device Project, sub-project 3:<br>Multimodal Cross-lingual Task-Oriented Dialogue System for Inclusive Communication Support (NSTC)</li>
           <li>Large Language Model Agent System for Smart City (III)</li>
@@ -191,7 +230,6 @@ document.addEventListener("DOMContentLoaded", () => {
       <div class="timeline-item">
         <h5><span class="text-muted">2024.08 - Now</span>&nbsp;EMI Teaching Assistent, College Of Business, NTPU</h5>
         <ul>
-          <li>Software Engineering</li>
           <li>Python for Accounting Applications</li>
           <li>Artificial Intelligence in Finance and Quantitative Analysis</li>
           <li>Sustainability and ESG Data Analytics</li>
@@ -233,11 +271,10 @@ document.addEventListener("DOMContentLoaded", () => {
   `,
   award: `
     <div class="activity-list">
-      <li>2025 NTPU USR Sustainability × Technology Proposal Competition - 1st place</li>
       <li><b>Best Paper Award</b>, Bor-Jen Chen and Min-Yuh Day (2025), AI-Assisted ESG Reporting: A RAG-Based Framework for Accurate and Stylistically Appropriate Text Generation", The 31st International Conference on IT Applications and Management (ITAM), Jinju, Korea, October 26-30, 2025.</li>
       <li>The first place in the evaluation of a Claim’s Validity Period on Social Media subtask of the NTCIR-18 FinArg-2 Task, 2025</li>
       <li>The first place in the Legal Risk (LR) subtask using Franch and Multilingual datasets of the NTCIR-18 MedNLP-CHAT: Medical Natural Language Processing for AI Chat, 2025</li>
-      <li><b>NTCIR-18 Best Oral Presentation Award</b>, NTCIR-18 FinArg-2: Temporal Inference of Financial Arguments, 2025</li>
+      <li><b>NTCIR-18 Best Poster Presentation Award</b>, NTCIR-18 FinArg-2: Temporal Inference of Financial Arguments, 2025</li>
       <li><b>NTCIR-18 Best Oral Presentation Award</b>, NTCIR-18 MedNLP-CHAT: Medical Natural Language Processing for AI Chat, 2025</li>
       <li><b>NTCIR-18 Best Poster Presentation Award</b>, NTCIR-18 FinArg-2: Temporal Inference of Financial Arguments, 2025</li>
       <li><b>Outstanding International Paper Award</b>, Bor-Jen Chen and Min-Yuh Day (2025), Generative AI in Enhancing ESG Reporting: ESG Data Consistency and Annotation, The 36th International Conference on Information Management (ICIM 2025), New Taipei City, Taiwan, May 16, 2025.</li>
